@@ -1,7 +1,6 @@
 # ML-Finance: Stock Price Prediction with LSTMs
 
-This project applies deep learning techniques (PyTorch) to forecast short-term stock index movements using NASDAQ data.  
-The pipeline covers preprocessing, model training, evaluation, and visualization, and includes an analytics dashboard for results.  
+This project applies deep learning techniques (PyTorch) to forecast short-term stock index movements using NASDAQ from December 2024. The pipeline covers preprocessing, model training, evaluation, and visualization. Future work aims to incorporate a visual analytics dashboard and parse stock market data from the web using Requests and Pandas. 
 
 ---
 
