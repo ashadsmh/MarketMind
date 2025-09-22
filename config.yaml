@@ -1,0 +1,19 @@
+data:
+  path: data/historical_stock.csv
+  sequence_length: 30
+  train_split: 0.8
+
+model:
+  input_size: 6     # OHLCV + engineered features
+  hidden_size: 64
+  num_layers: 2
+  dropout: 0.2
+
+training:
+  device: cuda
+  batch_size: 64
+  epochs: 20
+  learning_rate: 0.001
+
+logging:
+  log_file: results/training_log.csv
