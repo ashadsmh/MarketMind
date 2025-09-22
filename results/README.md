@@ -1,18 +1,21 @@
 # Results
 
-This folder contains experiment outputs and evaluation artifacts for the ML-Finance project.
+This folder contains outputs from training and evaluation of the ML-Finance project.
 
 ## Files
 - **training_log.csv**  
-  Logs training progress (epoch, training loss, validation loss, accuracy/MAE). Useful for debugging and reproducing results.
+  Logs training progress (epoch, training loss, validation loss, MAE). Useful for debugging and reproducing results
 
 - **metrics.png**  
-  Visualization of model performance across epochs (e.g., training vs validation loss). Helps show convergence and generalization.
+  Visualization of model performance across epochs (training vs validation loss). Helps show convergence and generalization
 
 - **predictions.csv**  
-  Model forecasts vs. actual stock prices for December 2024.  
-  Columns: `Date`, `Actual_Close`, `Predicted_Close`.
+  Model forecasts vs. actual NASDAQ closing prices for December 2024  
+  Columns: `Date`, `Actual_Close`, `Predicted_Close`
+
+## Summary
+The model converged smoothly (validation loss ~0.0125 by epoch 10) and achieved a mean absolute error (MAE) under ~80 points on the NASDAQ index, which is strong for a limited dataset
 
 ## Notes
-- Results here are based on the dataset `data/nasdaq_dec2024.csv`.
-- For future experiments, create subfolders:  
+- Results here are based on the dataset: `data/nasdaq_dec2024.csv`
+- For future experiments, create subfolders under `results/` (e.g., `results/experiment_1/`) to keep logs, charts, and predictions organized
