@@ -13,9 +13,13 @@ This folder contains outputs from training and evaluation of the ML-Finance proj
   Model forecasts vs. actual NASDAQ closing prices for December 2024  
   Columns: `Date`, `Actual_Close`, `Predicted_Close`
 
+- **predictions_chart.png**  
+  Visualization of `predictions.csv`, showing Actual vs Predicted NASDAQ closes over time
+
 ## Summary
-The model converged smoothly (validation loss ~0.0125 by epoch 10) and achieved a mean absolute error (MAE) under ~80 points on the NASDAQ index, which is strong for a limited dataset
+The model converged smoothly (validation loss ~0.0125 by epoch 10) and achieved a mean absolute error (MAE) under ~80 points on the NASDAQ index, which is strong for a limited dataset.  
+The predictions closely track the real market trend, showing the model captured price dynamics reasonably well.
 
 ## Notes
-- Results here are based on the dataset: `data/nasdaq_dec2024.csv`
+- Results are based on the dataset: `data/nasdaq_dec2024.csv`
 - For future experiments, create subfolders under `results/` (e.g., `results/experiment_1/`) to keep logs, charts, and predictions organized
