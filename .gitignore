@@ -1,55 +1,43 @@
-# Prerequisites
-*.d
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Virtual environment
+.env
+.venv
+env/
+venv/
+ENV/
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints
 
-# Precompiled Headers
-*.gch
-*.pch
+# PyTorch / model files
+*.pth
+*.pt
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Data files
+data/*.csv
+!data/historical_stock.csv   # Keep sample dataset
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Results
+results/*.png
+results/*.csv
+!results/metrics.png
+!results/predictions.png
+!results/feature_importance.png
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# Logs
+*.log
+*.txt
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# IDE / Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+# Mac / Linux system files
+.DS_Store
+Thumbs.db
